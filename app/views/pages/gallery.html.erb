@@ -1,0 +1,16 @@
+<% content_for :head do %>
+	<script type="text/processing" data-processing-target="processing-canvas" src = "<%= @sim.link %>">
+</script>
+<%end%>
+
+<div class="container">
+<h1><%= @sim.name %></h1>
+</div>
+
+<center>
+<canvas id="processing-canvas" style = "background: grey; border: solid black 2px;"></canvas>
+
+<p style="width: 800px"><%= @sim.description %></p><br>
+
+</center>
+

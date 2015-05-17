@@ -1,0 +1,14 @@
+<% @simulations.each do |s| %>
+
+<div class="jumbotron" style="color: black;">     <div class="container">
+<h1><%= s.name %></h1>
+<%= image_tag s.image %>
+<p><%= s.description %></p>
+
+<a class="btn btn-default" href="<%= gallery_path(s) %>" role="button">Check it out</a>
+<br>
+
+</div>
+</div>
+
+<%end%>
